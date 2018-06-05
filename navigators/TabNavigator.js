@@ -4,20 +4,11 @@ import { createBottomTabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
 import GetUsers from '../scenes/GetUsers'
-
-class SearchScreen extends React.Component {
-  render() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Search!</Text>
-      </View>
-    );
-  }
-}
+import Search from '../scenes/Search'
 
 export default createBottomTabNavigator({
   Users: GetUsers,
-  Search: SearchScreen,
+  Search: Search,
 },
   {
     initialRouteName: 'Users',
